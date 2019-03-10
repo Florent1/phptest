@@ -1,0 +1,10 @@
+<?php
+$title = "Indiana Jones and the Last Crusade";
+$seen = True;
+$yearOfRelease = 1989;
+$movieNote = 7.6;
+echo $title;
+echo $seen;
+echo $yearOfRelease;
+echo $movieNote;
+?>
