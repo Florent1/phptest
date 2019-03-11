@@ -14,7 +14,7 @@ switch ($opponentWeapon) {
         break;
 }
 
-echo $indyWeapon;
+echo "If the weapon of the opponent is a " . $opponentWeapon . " Indy will use his " . $indyWeapon . ".";
 
 //le pistolet bat le poing mais perd contre le fouet
 //le poing bat le fouet mais perd contre le pistolet
