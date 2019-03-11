@@ -1,0 +1,26 @@
+<?php
+$message1 = "0@sn9sirppa@#?ia'jgtvryko1";
+$message2 = "q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj";
+$message3 = "aopi?sgnirts@#?sedhtg+p9l!";
+
+$start = 5 ;
+
+$lenghtMessage1 = strlen($message1) /2;
+$lenghtMessage2 = strlen($message2) /2;
+$lenghtMessage3 = strlen($message3) /2;
+
+
+$rest = substr($message1, $start, $lenghtMessage1);
+$replace = str_replace('@#?', ' ', $rest);
+
+$rest1 = substr($message2, $start, $lenghtMessage2);
+$replace1 = str_replace('@#?', ' ', $rest1);
+
+$rest2 = substr($message3, $start, $lenghtMessage3);
+$replace2 = str_replace('@#?', ' ', $rest2);
+
+echo strrev($replace) ." ";
+echo strrev($replace1)." ";
+echo strrev($replace2);
+
+?>
