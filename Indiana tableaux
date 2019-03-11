@@ -7,7 +7,7 @@ $movies = [
 
 foreach ($movies as $movieName => $listActors)
 {
-    echo ("Dans le film".$movieName.", les principaux acteurs sont : ");
+    echo "Dans le film $movieName, les principaux acteurs sont : ";
         foreach ($listActors as $name)
         {
             echo $name;
