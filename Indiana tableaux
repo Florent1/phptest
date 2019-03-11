@@ -1,0 +1,16 @@
+<?php
+$movies = [
+    'Raiders of the Lost Ark' => ['Harrison Ford, ', 'Denholm Elliott, ', 'John Rhys-Davies.'],
+    'Indiana Jones and the Temple of Doom ' => ['Harrison Ford, ', 'Kate Capshaw, ', 'Jonathan Ke Quan.'],
+    'Indiana Jones and the Last Crusade ' => ['Harrison Ford, ', 'Denholm Elliott, ', 'John Rhys-Davies.']
+];
+
+foreach ($movies as $movieName => $listActors)
+{
+    echo ("Dans le film".$movieName.", les principaux acteurs sont : ");
+        foreach ($listActors as $name)
+        {
+            echo $name;
+        }
+    echo "<br>";
+}
