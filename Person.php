@@ -8,14 +8,19 @@ class Person
     public $adress;
     public $birthday;
 
-
-    public function information($lastName, $firstName, $adress, $birthday)
+    public function __construct($lastName, $firstName, $adress, $birthday)
     {
         $this->lastName = $lastName;
         $this->firstName = $firstName;
         $this->adress = $adress;
         $this->birthday = $birthday;
-        $informations =  $lastName . ' ' . $firstName . ' ' . $adress . ' ' . $birthday;
+    }
+
+
+    public function information()
+    {
+
+        $informations =  $this->lastName . ' ' . $this->firstName . ' ' . $this->adress . ' ' . $this->birthday;
         return $informations;
 
     }
@@ -38,15 +43,17 @@ class Person
 }
 
 
-$Bob = new Person();
-$Bob->lastName = 'Magic';
-$Bob->firstName = 'Bob';
-$Bob->adress = 'avenue des champignons';
-$Bob->birthday = '19/11/1984';
-echo $Bob->information('Magic', 'Bob', 'avenue des champignons', '19/11/1984');
+$Bob = new Person('Magic', 'Bob', 'avenue des champignons', '19/11/1984');
+
+echo $Bob->information();
 
 $Bob->changeAdress('avenue des Wilders');
-var_dump($Bob);
+
+echo "<br>";
+
+echo $Bob->information();
+
+echo "<br>";
 
 echo $Bob->age('19/11/1984');
 
