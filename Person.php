@@ -30,7 +30,7 @@ class Person
         $this->adress = $adress;
     }
 
-    public function age($birthday)
+    public function age()
     {
         $am = explode('/', $this->birthday);
         $an = explode('/', date('d/m/Y'));
@@ -55,6 +55,6 @@ echo $Bob->information();
 
 echo "<br>";
 
-echo $Bob->age('19/11/1984');
+echo $Bob->age();
 
 
